@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: "Raleway", sans-serif;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffebcd;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  width: 10vw;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  margin-right: 2.188rem;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #af8260;
+  padding: 0.5em 1.25em;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 2.5em;
+  letter-spacing: 0.063em;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 40px;
+}
+
+header ul li a:hover {
+  background-color: #825b32;
+  padding: 0.5em 1.25em;
+  color: #fff;
+}
+
+main {
+  margin-top: 1.25rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .textBox {
+  position: relative;
+  width: 550px;
+}
+
+main .textBox h2 {
+  font-size: 4rem;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0.063rem;
+  color: #af8260;
+}
+
+main .textBox h2 span {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #825b32;
+}
+
+main .textBox p {
+  font-size: 1em;
+  color: #af8260;
+  line-height: 1.6;
+}
+
+main .textBox a {
+  display: inline-block;
+  margin-top: 1.25em;
+  padding: 0.5em 1.25em;
+  border-radius: 5em;
+  color: #fff;
+  background-color: #825b32;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.063rem;
+}
+
+main .textBox a:hover {
+  background-color: #6f4e2b;
+}
+
+main .imgBox {
+  position: relative;
+  padding-right: 3.125rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main .imgBox img {
+  width: 35vw;
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thumb li {
+  list-style: none;
+  margin: 0 0.313rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.thumb li:hover {
+  transform: translateY(-30%);
+}
+
+.thumb li img {
+  width: 5rem;
+  transition: 0.5s ease-out;
+}
+
+.thumb li img:hover {
+  width: 5rem;
+  transform: scale(1.2);
+}
+
+.sci {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6%;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci a {
+  display: inline-block;
+  margin: 1.25rem 0;
+  transform: scale(0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  filter: invert(50%);
+}
+
+.sci a:hover {
+  transform: scale(0.8);
+  filter: none;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d8dbbd;
+  clip-path: circle(40vw at right 45vw);
+}
+
+@media (max-width: 438px) {
+  body,
+  .section {
+    height: auto;
+    min-height: 100vh;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  header .logo {
+    width: 20vw;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  header ul li a {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 8rem;
+    padding-bottom: 3rem;
+  }
+  main .textBox {
+    width: 80%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  main .textBox h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  main .imgBox {
+    margin-top: 2rem;
+    padding-right: 0;
+    justify-content: center;
+  }
+  main .imgBox img {
+    width: 50vw;
+    max-width: 250px;
+  }
+  .thumb {
+    bottom: 0.8rem;
+    gap: 0.8rem;
+  }
+  .thumb li img {
+    width: 3.5rem;
+  }
+  .circle {
+    clip-path: circle(80vw at right 50%);
+  }
+}
+
+@media (min-width: 439px) and (max-width: 768px) {
+  body,
+  .section {
+    height: auto;
+    min-height: 100vh;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  header .logo {
+    width: 15vw;
+    max-width: 120px;
+    margin: 0 auto;
+  }
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  header ul li a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 12rem;
+    padding-bottom: 3rem;
+  }
+  main .textBox {
+    width: 80%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  main .textBox h2 {
+    font-size: 5vw;
+    margin-bottom: 1rem;
+  }
+  main .imgBox {
+    margin-top: 2rem;
+    padding-right: 0;
+    justify-content: center;
+  }
+  main .imgBox img {
+    width: 50vw;
+    max-width: 300px;
+  }
+  .thumb {
+    bottom: 1rem;
+    gap: 1rem;
+  }
+  .thumb li img {
+    width: 4rem;
+  }
+  .circle {
+    clip-path: circle(80vw at right 50%);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body,
+  .section {
+    height: auto;
+    min-height: 100vh;
+  }
+  header {
+    padding: 0 3rem;
+    align-items: center;
+  }
+  header .logo {
+    width: 12vw;
+    max-width: 140px;
+  }
+  header ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  header ul li a {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  main .textBox {
+    width: 60%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  main .textBox h2 {
+    font-size: 3.5vw;
+  }
+  main .imgBox {
+    justify-content: flex-end;
+  }
+  .thumb {
+    bottom: 1.5rem;
+    gap: 1rem;
+  }
+  .thumb li img {
+    width: 4.5rem;
+  }
+  .circle {
+    clip-path: circle(50vw at right 45vw);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1365px) {
+  main .textBox h2 {
+    width: 60%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
